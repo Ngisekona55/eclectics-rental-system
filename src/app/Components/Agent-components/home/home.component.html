@@ -1,1 +1,4 @@
-<p>home works!</p>
+<button mat-icon-button (click)="toggleSidebar()">
+  <mat-icon>menu</mat-icon>
+</button>
+<app-sidebar  [ngClass]="{ 'hidden': sidebarVisible }"></app-sidebar>
