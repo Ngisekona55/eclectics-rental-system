@@ -7,10 +7,4 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  public sidebarVisible = true;
-
-  public toggleSidebar(): void {
-    this.sidebarVisible = !this.sidebarVisible;
-  }
-
 }
