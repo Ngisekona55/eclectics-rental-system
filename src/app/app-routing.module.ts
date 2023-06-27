@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {path: 'owner', loadChildren: () => import('./Modules/owner/owner.module').then(m => m.OwnerModule)},
-  {path: 'agents', loadChildren: () => import('./Modules/agent/agent.module').then(m => m.AgentModule)}
+  {path: 'agent', loadChildren: () => import('./Modules/agent/agent.module').then(m => m.AgentModule)}
 ];
 
 @NgModule({
@@ -11,4 +11,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
- 
