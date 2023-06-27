@@ -17,15 +17,17 @@ const routes: Routes = [
   {path: 'owner', component: OwnerComponent,
    children: [
     {path: 'toolbar', component: ToolbarComponent},
-    {path: 'sidebar', component: SidebarComponent},
-    {path: 'dashboard', component: DashboardComponent},
+    {path: 'sidebar', component: SidebarComponent,
+    children: [{path: 'dashboard', component: DashboardComponent},
     {path: 'my-properties', component: MyPropertiesComponent},
     {path: 'agents', component: AgentsComponent},
     {path: 'tenants', component: TenantsComponent},
     {path: 'units', component: UnitsComponent},
     {path: 'notifications', component: NotificationsComponent},
     {path: 'issues', component: IssuesComponent},
-    {path: 'settings', component: SettingsComponent}
+    {path: 'settings', component: SettingsComponent}]
+   }
+
    ]}
 ];
 
