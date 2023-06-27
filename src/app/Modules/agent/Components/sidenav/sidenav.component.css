@@ -1,0 +1,39 @@
+
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #d4d5d6;
+}
+
+.sidenav{
+  background: #0696e7;
+}
+
+.dashboard-container{
+  display: flex;
+  align-items: center;
+}
+.icon-container{
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text-container{
+  flex-grow: 1;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.toolbar{
+  position: absolute;
+  background: #0696e7;
+}
+
+.units{
+  margin-top: 50px;
+  position: center;
+}

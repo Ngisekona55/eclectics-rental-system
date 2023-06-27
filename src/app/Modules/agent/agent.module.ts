@@ -6,18 +6,32 @@ import { RouterModule } from '@angular/router';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { TenantsComponent } from './Components/tenants/tenants.component';
 import { HomeComponent } from './home.component';
+import { MyPropertiesComponent } from './Components/my-properties/my-properties.component';
+import { UnitsComponent } from './Components/units/units.component';
+import { NotificationsComponent } from './Components/notifications/notifications.component';
+import { SettingsComponent } from './Components/settings/settings.component';
+import { SidenavComponent } from './Components/sidenav/sidenav.component';
+import { MaterialModule } from 'src/app/Angular-Material/material/material.module';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
     DashboardComponent,
     TenantsComponent,
-    HomeComponent
+    HomeComponent,
+    MyPropertiesComponent,
+    UnitsComponent,
+    NotificationsComponent,
+    SettingsComponent,
+    SidenavComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
-    AgentRoutingModule
+    AgentRoutingModule,
+    MaterialModule,
+    MatSidenavModule
   ],
-  exports: [RouterModule]
+  exports: [RouterModule, SidenavComponent]
 })
 export class AgentModule { }

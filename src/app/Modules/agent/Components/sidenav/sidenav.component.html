@@ -1,0 +1,34 @@
+
+
+<div class="sidenav-container">
+  <mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened>
+      <div>
+        <img src="./src/app/assets/images/logo1.png">
+      </div>
+
+      <mat-nav-list>
+        <a mat-list-item [routerLink]="['/home/dashboard']"> <mat-icon>dashboard</mat-icon> Dashboard </a>
+        <a mat-list-item [routerLink]="['/home/my-properties']"> <mat-icon>apartment</mat-icon> My Properties </a>
+        <a mat-list-item [routerLink]="['/home/tenants']"> <mat-icon>people</mat-icon> Tenants </a>
+        <a mat-list-item [routerLink]="['/home/units']"> <mat-icon>house</mat-icon> Units </a>
+        <a mat-list-item [routerLink]="['/home/notifications']"> <mat-icon>email</mat-icon> Notifications </a>
+        <!-- <a mat-list-item [routerLink]="['/home/issues']"> <mat-icon>report_problem</mat-icon> Issues </a> -->
+        <a mat-list-item [routerLink]="['/home/settings']"> <mat-icon>settings</mat-icon>  Settings </a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <mat-toolbar class="toolbar" mode="top" opened>
+        <mat-toolbar-row>
+          Agent
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <br>
+      <br>
+      <div class="units">
+      <router-outlet></router-outlet>
+      </div>
+  </mat-sidenav-content>
+  </mat-sidenav-container>
+  </div>
