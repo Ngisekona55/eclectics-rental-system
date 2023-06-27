@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './Angular-Material/material/material.module';
 import { AgentModule } from './Modules/agent/agent.module';
+import { OwnerModule } from './Modules/owner/owner.module';
+import { OwnerRoutingModule } from './Modules/owner/owner-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { AgentModule } from './Modules/agent/agent.module';
     AppRoutingModule,
     AgentModule,
     AgentRoutingModule,
+    OwnerModule,
+    OwnerRoutingModule,
     BrowserAnimationsModule,
     MaterialModule
   ],
