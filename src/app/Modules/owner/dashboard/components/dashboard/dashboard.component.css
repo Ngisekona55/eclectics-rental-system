@@ -1,0 +1,21 @@
+p{
+  text-align: center;
+}
+.card-title{
+  color: rgb(14, 11, 8);
+}
+.card-body1{
+  background-color: rgb(115, 169, 227);
+}
+.card-body2{
+  background-color: rgb(49, 53, 136);
+}
+
+.card-body3{
+  background-color: rgb(83, 112, 183);
+}
+
+.card-body4{
+  background-color: rgb(44, 42, 192);
+  border: 10px;
+}

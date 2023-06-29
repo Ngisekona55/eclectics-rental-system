@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { SidebarComponent } from './Components/sidebar/sidebar.component';
+import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { OwnerComponent } from './owner.component';
-import { DashboardComponent } from './Components/dashboard/dashboard.component';
-import { MyPropertiesComponent } from './Components/my-properties/my-properties.component';
-import { AgentsComponent } from './Components/agents/agents.component';
-import { TenantsComponent } from './Components/tenants/tenants.component';
-import { UnitsComponent } from './Components/units/units.component';
-import { NotificationsComponent } from './Components/notifications/notifications.component';
-import { IssuesComponent } from './Components/issues/issues.component';
-import { SettingsComponent } from './Components/settings/settings.component';
-import { ToolbarComponent } from './Components/toolbar/toolbar.component';
+import { DashboardComponent } from './dashboard/components/dashboard/dashboard.component';
+import { MyPropertiesComponent } from './my-properties/components/my-properties/my-properties.component';
+import { TenantsComponent } from './tenants/components/tenants/tenants.component';
+import { UnitsComponent } from './units/components/units/units.component';
+import { NotificationsComponent } from './notifications/components/notifications/notifications.component';
+import { IssuesComponent } from './issues/components/issues/issues.component';
+import { SettingsComponent } from './settings/components/settings/settings.component';
+import { AgentsComponent } from './agents/components/agents/agents.component';
 
 const routes: Routes = [
   {path: 'owner', component: OwnerComponent,
