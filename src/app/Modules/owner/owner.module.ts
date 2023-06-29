@@ -16,6 +16,7 @@ import { RouterModule } from '@angular/router';
 import { OwnerComponent } from './owner.component';
 import { ToolbarComponent } from './Components/toolbar/toolbar.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 
@@ -39,8 +40,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     CommonModule,
     RouterModule,
     OwnerRoutingModule,
-    MaterialModule,
-    MatSidenavModule
+    MaterialModule
   ],
   exports: [RouterModule, SidebarComponent]
 })

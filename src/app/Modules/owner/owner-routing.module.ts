@@ -16,8 +16,8 @@ import { ToolbarComponent } from './Components/toolbar/toolbar.component';
 const routes: Routes = [
   {path: 'owner', component: OwnerComponent,
    children: [
-    {path: 'toolbar', component: ToolbarComponent},
-    {path: 'sidebar', component: SidebarComponent},
+    {path: 'sidebar', component: SidebarComponent,
+    children: [
     {path: 'dashboard', component: DashboardComponent},
     {path: 'my-properties', component: MyPropertiesComponent},
     {path: 'agents', component: AgentsComponent},
@@ -25,7 +25,9 @@ const routes: Routes = [
     {path: 'units', component: UnitsComponent},
     {path: 'notifications', component: NotificationsComponent},
     {path: 'issues', component: IssuesComponent},
-    {path: 'settings', component: SettingsComponent}
+    {path: 'settings', component: SettingsComponent},
+    {path: '',redirectTo: 'dashboard', pathMatch: 'full'}
+    ]}
    ]}
 ];
 

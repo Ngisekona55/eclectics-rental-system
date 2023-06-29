@@ -1,35 +1,40 @@
 
-
-<div class="sidenav-container">
 <mat-sidenav-container class="container">
-  <mat-sidenav class="sidenav" mode="side" opened>
-    <div>
-      <img src="./src/app/assets/images/logo1.png">
+  <mat-sidenav #sidenav mode="side" class="sidenav" opened>
+    <div class="logo">
+      <img src="./assets/images/logo2.png" width="50" height="50">
     </div>
 
     <mat-nav-list>
-      <a mat-list-item [routerLink]="['/owner/dashboard']"> <mat-icon>dashboard</mat-icon> Dashboard </a>
-      <a mat-list-item [routerLink]="['/owner/my-properties']"> <mat-icon>apartment</mat-icon> My Properties </a>
-      <a mat-list-item [routerLink]="['/owner/agents']"> <mat-icon>people</mat-icon> Agents </a>
-      <a mat-list-item [routerLink]="['/owner/tenants']"> <mat-icon>people</mat-icon> Tenants </a>
-      <a mat-list-item [routerLink]="['/owner/units']"> <mat-icon>house</mat-icon> Units </a>
-      <a mat-list-item [routerLink]="['/owner/notifications']"> <mat-icon>email</mat-icon> Notifications </a>
-      <a mat-list-item [routerLink]="['/owner/issues']"> <mat-icon>report_problem</mat-icon> Issues </a>
-      <a mat-list-item [routerLink]="['/owner/settings']"> <mat-icon>settings</mat-icon>  Settings </a>
+      <a mat-list-item [routerLink]="['/owner/sidebar/dashboard']"> <mat-icon>dashboard</mat-icon> Dashboard </a>
+      <a mat-list-item [routerLink]="['/owner/sidebar/my-properties']"> <mat-icon>apartment</mat-icon> My Properties </a>
+      <a mat-list-item [routerLink]="['/owner/sidebar/agents']"> <mat-icon>people</mat-icon> Agents </a>
+      <a mat-list-item [routerLink]="['/owner/sidebar/tenants']"> <mat-icon>people</mat-icon> Tenants </a>
+      <a mat-list-item [routerLink]="['/owner/sidebar/units']"> <mat-icon>house</mat-icon> Units </a>
+      <a mat-list-item [routerLink]="['/owner/sidebar/notifications']"> <mat-icon>email</mat-icon> Notifications </a>
+      <a mat-list-item [routerLink]="['/owner/sidebar/issues']"> <mat-icon>report_problem</mat-icon> Issues </a>
+      <a mat-list-item [routerLink]="['/owner/sidebar/settings']"> <mat-icon>settings</mat-icon>  Settings </a>
     </mat-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-toolbar class="toolbar" mode="top" opened>
-      <mat-toolbar-row>
-        Owner
-      </mat-toolbar-row>
-    </mat-toolbar>
-    <br>
-    <br>
-    <div class="units">
+       <mat-toolbar class="toolbar">
+        <mat-toolbar-row>
+          <button class="menu" mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+          </button>
+          <div class="owner">
+          Owner
+          </div>
+          <div>
+          <button class="logout">
+            Logout
+          </button>
+          </div>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <div class="units">
     <router-outlet></router-outlet>
     </div>
 </mat-sidenav-content>
 </mat-sidenav-container>
-</div>

@@ -8,4 +8,8 @@ import { MatSidenav } from '@angular/material/sidenav';
 })
 export class SidebarComponent {
 
+  toggleSidebar(sidenav: MatSidenav) {
+    sidenav.toggle();
+  }
+
 }

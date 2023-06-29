@@ -13,13 +13,16 @@ import { SidenavComponent } from './Components/sidenav/sidenav.component';
 const routes: Routes = [
   {path: 'home', component: HomeComponent,
    children: [
-    {path: 'sidenav', component: SidenavComponent },
+    {path: 'sidenav', component: SidenavComponent,
+    children: [
     {path: 'dashboard', component: DashboardComponent},
     {path: 'my-properties', component: MyPropertiesComponent},
     {path: 'tenants', component: TenantsComponent},
     {path: 'units', component: UnitsComponent},
     {path: 'notifications', component: NotificationsComponent},
-    {path: 'settings', component: SettingsComponent}
+    {path: 'settings', component: SettingsComponent},
+    {path: '', redirectTo: 'dashboard', pathMatch: 'full'}
+    ]}
    ]}
 ];
 
